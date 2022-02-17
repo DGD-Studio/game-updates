@@ -1,0 +1,20 @@
+{
+  "name": "game-updates",
+  "version": "1.0.0",
+  "description": "Bot that provides Game updates",
+  "scripts": {
+    "start": "node ."
+  },
+  "_moduleAliases": {
+    "@bot": "lib/libs/bot"
+  },
+  "main": "build/src/index.js",
+  "repository": "https://github.com/Drxckzyz/game-updates.git",
+  "author": "Drxckzyz <71843072+Drxckzyz@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "typescript": "^4.5.5"
+  }
+}
