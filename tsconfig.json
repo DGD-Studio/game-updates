@@ -25,10 +25,10 @@
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
     "paths": {
-      "@bots": ["lib/libs/bot"],
-      "@lib": ["lib/libs"]
+      "#bots/*": ["lib/libs/bot/*.ts"],
+      "#lib/*": ["lib/libs/*.ts"]
     }
   },
-  "include": ["libs/**/*.ts", "src/**/*.ts"],
+  "include": ["lib/**/*.ts", "src/**/*.ts"],
   "exclude": ["node_modules"]
 }

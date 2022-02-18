@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Bot that provides Game updates",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "build": "tsc --build",
+    "build:ignore": "tsc"
   },
-  "_moduleAliases": {
-    "@bot": "lib/libs/bot"
+  "imports": {
+    "#bots/*": "./build/lib/libs/bot/*.js",
+    "#lib/*": "./build/lib/libs/*.js"
   },
   "main": "build/src/index.js",
   "repository": "https://github.com/Drxckzyz/game-updates.git",
@@ -14,7 +17,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "module-alias": "^2.2.2",
+    "@types/module-alias": "^2.0.1",
+    "dotenv": "^16.0.0",
     "typescript": "^4.5.5"
   }
 }
